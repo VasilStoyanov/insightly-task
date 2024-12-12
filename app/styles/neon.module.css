@@ -1,0 +1,160 @@
+.neon-button {
+  font-size: 1rem;
+  background: var(--clr-bg);
+  font-family: "Balsamiq Sans", cursive;
+  color: var(--clr-neon);
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  border: var(--clr-neon) 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+  position: relative;
+  margin: 10px;
+}
+
+.neon-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em var(--clr-neon);
+  opacity: 0;
+  background-color: var(--clr-neon);
+  z-index: -1;
+  transition: opacity 100ms linear;
+}
+
+.neon-button:hover,
+.neon-button:focus {
+  color: var(--clr-neon);
+  text-shadow: none;
+}
+
+.neon-button:hover::before,
+.neon-button:focus::before {
+  opacity: 1;
+}
+.neon-button:hover::after,
+.neon-button:focus::after {
+  opacity: 1;
+}
+
+.neon-button-neutral {
+  font-size: 1rem;
+  background: var(--clr-bg);
+  font-family: "Balsamiq Sans", cursive;
+  color: var(--clr-neon-neutral);
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  border: var(--clr-neon-neutral) 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon-neutral),
+    0 0 0.5em 0 var(--clr-neon-neutral);
+  position: relative;
+  margin: 10px;
+}
+
+.neon-button-neutral::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em var(--clr-neon-neutral);
+  opacity: 0;
+  background-color: var(--clr-neon-neutral);
+  z-index: -1;
+  transition: opacity 100ms linear;
+}
+
+.neon-button-neutral:hover,
+.neon-button-neutral:focus {
+  color: var(--clr-neon-neutral);
+  text-shadow: none;
+}
+
+.neon-button-neutral:hover::before,
+.neon-button-neutral:focus::before {
+  opacity: 1;
+}
+.neon-button-neutral:hover::after,
+.neon-button-neutral:focus::after {
+  opacity: 1;
+}
+
+.neon-button-sad {
+  font-size: 1rem;
+  background: var(--clr-bg);
+  font-family: "Balsamiq Sans", cursive;
+  color: var(--clr-neon-sad);
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  border: var(--clr-neon-sad) 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon-sad),
+    0 0 0.5em 0 var(--clr-neon-sad);
+  position: relative;
+  margin: 10px;
+}
+
+.neon-button-sad::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em var(--clr-neon-sad);
+  opacity: 0;
+  background-color: var(--clr-neon-sad);
+  z-index: -1;
+  transition: opacity 100ms linear;
+}
+
+.neon-button-sad:hover,
+.neon-button-sad:focus {
+  color: var(--clr-neon-sad);
+  text-shadow: none;
+}
+
+.neon-button-sad:hover::before,
+.neon-button-sad:focus::before {
+  opacity: 1;
+}
+.neon-button-sad:hover::after,
+.neon-button-sad:focus::after {
+  opacity: 1;
+}
+
+.neon-text-tracker {
+  display: inline;
+  color: #3d6ff8;
+  text-shadow: 0 0 7px #7127fa, 0 0 10px #7127fa, 0 0 21px #7127fa,
+    0 0 42px rgb(4, 0, 241), 0 0 82px rgb(4, 0, 241), 0 0 92px rgb(4, 0, 241),
+    0 0 102px rgb(4, 0, 241), 0 0 151px rgb(4, 0, 241);
+}
+
+.neonText {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.textCentered {
+  position: absolute;
+  top: 10%;
+  right: 106%;
+  width: 200px;
+}

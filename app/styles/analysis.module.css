@@ -1,0 +1,15 @@
+.analysis {
+  position: absolute;
+  top: 10%;
+  right: 106%;
+  width: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  .analysis {
+    position: absolute;
+    top: 150%;
+    right: 30%;
+    width: 200px;
+  }
+}

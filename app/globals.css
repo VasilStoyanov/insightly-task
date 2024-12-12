@@ -1,0 +1,26 @@
+:root {
+  --clr-neon: hsl(317 100% 54%);
+  --clr-bg: hsl(0, 0%, 0%);
+  --clr-neon-neutral: hsl(118, 54%, 43%);
+  --clr-neon-sad: hsl(0, 100%, 31%);
+}
+
+body {
+  background-color: #000;
+}
+
+.main {
+  position: absolute;
+  width: 70%;
+  left: 20%;
+  top: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    position: absolute;
+    width: 70%;
+    left: 0%;
+    top: 1%;
+  }
+}
